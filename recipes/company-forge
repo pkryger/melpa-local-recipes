@@ -1,0 +1,3 @@
+(company-forge :fetcher git
+               :url "/Users/pkryger/gh/pkryger/company-forge.el"
+               :files (:defaults "icons"))

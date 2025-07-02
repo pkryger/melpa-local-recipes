@@ -1,0 +1,16 @@
+#+title: MELPA recipes to build from a local checkouts
+
+This is to let package-build to work with local clones of packages. Note, that
+each file in =recipes/= directory needs to be in sync with its counterpart in
+MELPA (except for =:fetcher= and =:url= / =:repo=)
+
+Sample configuration:
+#+begin_src emacs-lisp
+(use-package package-build
+  :config
+  (when-let* ((dir "~/gh/pkryger/melpa-local-recipes")
+              ((file-directory-p dir)))
+    (setopt package-build-working-dir (expand-file-name "working/" dir))
+    (setopt package-build-archive-dir (expand-file-name "packages/" dir))
+    (setopt package-build-recipes-dir (expand-file-name "recipes/" dir))))
+#+end_src

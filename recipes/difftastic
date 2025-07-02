@@ -1,0 +1,1 @@
+(difftastic :fetcher git :url "/Users/pkryger/gh/pkryger/difftastic.el")
