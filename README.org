@@ -1,8 +1,8 @@
 #+title: MELPA recipes to build from a local checkouts
 
-This is to let package-build to work with local clones of packages. Note, that
+This is to let [[https://github.com/melpa/package-build][package-build]] to work with local clones of packages. Note, that
 each file in =recipes/= directory needs to be in sync with its counterpart in
-MELPA (except for =:fetcher= and =:url= / =:repo=)
+[[https://github.com/melpa/melpa][MELPA]] (except for =:fetcher= and =:url= / =:repo=).
 
 Sample configuration:
 #+begin_src emacs-lisp
